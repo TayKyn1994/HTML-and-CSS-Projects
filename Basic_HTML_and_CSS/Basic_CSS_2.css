@@ -1,0 +1,10 @@
+p {
+	color: red;
+	background: black;
+	font-style: italic;
+	text-align: center;
+}
+
+h1 {
+	text-shadow: 2px 2px #FF0000;
+}
