@@ -1,0 +1,11 @@
+body {
+    font: 16px Arial, sans-serif;
+}
+
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid darkblue;
+    border-radius: 3px;
+}
