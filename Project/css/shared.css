@@ -143,7 +143,7 @@ section {
     HOME SECTION STYLES
 ================================================*/
 #home {
-    background: url(./images/planets.jpg) no-repeat 50% 50%;
+    background: url(../images/planets.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -163,7 +163,7 @@ section {
     color: #fff;
     letter-spacing: 5pt;
     word-spacing: 21pt;
-    font-size: 4.5cm;
+    font-size: 4.5em;
     text-align: left;
     font-family: impact, sans-serif;
     line-height: 2;
@@ -220,7 +220,7 @@ section {
     margin: 0 auto;
     color: #13161B;
     font-weight: 500;
-    font-size: 1.3cm;
+    font-size: 1.3em;
     letter-spacing: 0pt;
     word-spacing: 0pt;
 }
@@ -231,7 +231,7 @@ section {
     margin: 0 auto;
     color: #13161B;
     font-weight: 900;
-    font-size: 1.5cm;
+    font-size: 1.5em;
     font-variant: small-caps;
     letter-spacing: .4pt;
     word-spacing: .3pt;
