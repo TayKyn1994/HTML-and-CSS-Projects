@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">About</a>
+                  <a class="nav-link text-light" href="#about">About</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">Showtimes</a>
+                  <a class="nav-link text-light" href="#showtimes">Showtimes</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">Deals</a>
+                  <a class="nav-link text-light" href="#deals">Deals</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -47,7 +47,7 @@
                 <img class="img-fluid" src="./img/pdx.jpg" alt="">
 
               </div>
-              <div class="col-sm">
+              <div class="col-sm" id="about">
               
                 <h3>Accomodations:</h3>
                 <p>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</p>
@@ -75,12 +75,13 @@
           </div>
 
           <!-- showtimes -->
-          <div class="card-group" id="showtimes">
+          <h3>Showtimes</h3>
+          <div class="card-deck" id="showtimes">
               <div class="card">
                   <img class="card-img-top" src="./img/kongskullisland.jpg" alt="Card image cap">
                   <div class="card-block">
                       <h4 class="card-title">Kong: Skull Island</h4>
-                      <p>A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden</p><br>
+                      <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden</p><br>
                       <span class="badge badge-pill badge-info">12:00 p.m.</span>
                       <span class="badge badge-pill badge-info">1:30 p.m.</span>
                       <span class="badge badge-pill badge-info">3:00 p.m.</span>
@@ -92,8 +93,8 @@
                       <small class="text-muted">Last updated 3 mins ago</small>
                   </div>
               </div>
-          </div>
-          <div class="card-group" id="showtimes">
+          <!--</div>-->
+          <!-- <div class="card-group" id="showtimes"> -->
             <div class="card">
                 <img class="card-img-top" src="./img/ghostintheshell.jpg" alt="Card image cap">
                 <div class="card-block">
@@ -110,8 +111,8 @@
                     <small class="text-muted">Last updated 3 mins ago</small>
                 </div>
             </div>
-        </div>
-        <div class="card-group" id="showtimes">
+        <!-- </div> -->
+        <!-- <div class="card-group" id="showtimes"> -->
             <div class="card">
                 <img class="card-img-top" src="./img/beautyandthebeast.jpg" alt="Card image cap">
                 <div class="card-block">
@@ -129,35 +130,97 @@
                 </div>
             </div>
         </div>
+        
+        <!--showtimes end-->
+          
+        <!--jumbotron heading-->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+          <div class="container">
+            <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform;uppercase;">Movie Deals</h1>
+            <p class="lead">Check out our monthly deals...</p>
+            <!-- movie deals -->
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+            <!-- end movie deals-->
+          </div>
+        </div>
+        <!-- end jumbotron-->
 
-          <!-- footer -->
-
-          <div class="text-center">
+      <!--form modal-->
+      <div class="modal fade" id="register">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Register to receive movie deals...</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
             <form>
-                <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-          </div>
+              <fieldset class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Email...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="password">Password:</label>
+                <input type="text" class="form-control" id="password" placeholder="Password...">
+              </fieldset>
+            </form>
 
-          <div class="container my-5">
-              <ul class="nav nav-inline">
-                  <li class="nav-item">
-                      <small><a class="nav-link" href="#">Movie Rewards</a></small>
-                  </li>
-                  <li class="nav-item">
-                      <small><a class="nav-link" href="#">Movies@news.org</a></small>
-                  </li>
-                  <li class="nav-item">
-                      <small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
-                  </li>
-                  <li class="nav-item">
-                      <small class="nav-link">&copy;2020 Academy Cinemas&reg;</small>
-                  </li>
-              </ul>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
+        </div>
+      </div>
+
+
+      <!--end form modal-->
+
+        <!--Email form-->
+        <div class="text-center">
+          <form id="deals">
+              <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie reward deals!">Submit
+              </button>
+            </form>
+        </div>
+        <!--end email form-->
+
+
+        <!-- footer -->
+        <div class="container my-5">
+            <ul class="nav nav-inline">
+                <li class="nav-item">
+                    <small><a class="nav-link" href="#">Movie Rewards</a></small>
+                </li>
+                <li class="nav-item">
+                    <small><a class="nav-link" href="#">Movies@news.org</a></small>
+                </li>
+                <li class="nav-item">
+                    <small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
+                </li>
+                <li class="nav-item">
+                    <small class="nav-link">&copy;2020 Academy Cinemas&reg;</small>
+                </li>
+            </ul>
+        </div>
 
 
 
@@ -169,5 +232,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    <script>
+    $('.popover-dismiss').popover({
+    trigger: 'focus'
+    })
+    </script>
+  
+  
+  
   </body>
 </html>
